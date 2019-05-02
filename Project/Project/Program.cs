@@ -12,11 +12,13 @@ namespace Project
     {
         static void Main(string[] args)
         {
+            //Declare Variables
+            string answer;
 
+            //Introduction
+            Console.WriteLine("~*~*~* Q & A *~*~*~");
 
-
-
-
+            //Code
 
 
 
