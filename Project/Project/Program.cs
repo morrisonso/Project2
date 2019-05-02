@@ -13,15 +13,20 @@ namespace Project
         static void Main(string[] args)
         {
             //Declare Variables
-            string answer;
+            string name;
 
             //Introduction
-            Console.WriteLine("~*~*~* Q & A *~*~*~");
+            Console.WriteLine("                   ~*~*~* Q & A *~*~*~");
+            Console.WriteLine("===========================================================");
+            Console.WriteLine("Answer the questions and press 'enter' to submit your answer");
 
             //Code
+            Console.Write("What is your name? ");
+            name = Console.ReadLine();
 
-
-
+            //Pause
+            Console.WriteLine();
+            Console.ReadLine();
             //Test comment
         }
     }
