@@ -10,27 +10,28 @@ namespace Project
 {
     class Program
     {
+<<<<<<< HEAD
         private static string parent, address;
+=======
+        public static string parent;
+>>>>>>> 52d2ff9b62b1345083eab6bdb7e66f203bd37c63
 
         static void Main(string[] args)
         {
-            //Declare Variables
-
 
             //Introduction
-            Console.WriteLine("                   ~*~*~* Q & A *~*~*~");
+            Console.WriteLine("  ~*~*~* What Gift Should You Get for Your Parent? *~*~*~");
             Console.WriteLine("===========================================================");
-            Console.WriteLine("Answer the questions and press 'enter' to submit your answer");
+            Console.WriteLine("Answer the questions and press 'enter' to submit an answer");
+            Console.WriteLine("");
 
             //Code
             parentSelection();
 
 
-
             //Pause
             Console.WriteLine();
             Console.ReadLine();
-            //Test comment
 
         }
     
