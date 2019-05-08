@@ -10,7 +10,7 @@ namespace Project
 {
     class Program
     {
-        private static string parent;
+        private static string parent, address;
 
         static void Main(string[] args)
         {
@@ -34,7 +34,7 @@ namespace Project
 
         }
 
-        public static void parentSelection()
+        public static string parentSelection()
         {
             string temp;
             Console.Write("Is your parent female or male? ");
@@ -52,7 +52,26 @@ namespace Project
             {
                 Console.WriteLine("Not vaild input");
             }
+            return parent;
         }
 
+        public static void parentReference()
+        {
+            if (parent.parentSelection() == "male")
+            {
+                address = "dad";
+
+            }
+            else if (parent.parentSelection() == "female")
+            {
+                address = "mum";
+            }
+            else
+            {
+                address = "they";                 
+            }
+        }
+        
+    
     }
 }
