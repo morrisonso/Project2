@@ -15,7 +15,7 @@ namespace Project
         static void Main(string[] args)
         {
             //Declare Variables
-            
+
 
             //Introduction
             Console.WriteLine("                   ~*~*~* Q & A *~*~*~");
@@ -23,7 +23,7 @@ namespace Project
             Console.WriteLine("Answer the questions and press 'enter' to submit your answer");
 
             //Code
-            
+            parentSelection();
 
 
 
@@ -33,36 +33,44 @@ namespace Project
             //Test comment
 
         }
+    
 
         public static string parentSelection()
+
         {
             string temp;
             Console.Write("Is your parent female or male? ");
             temp = Console.ReadLine();
-            temp.ToLower();
-            if(temp == "male")
+
+            
+            do{
+            if (temp.ToLower() == "male")
             {
+
                 parent = "male";
+
             }
-            else if(temp == "female")
+            else if (temp.ToLower() == "female")
             {
                 parent = "female";
             }
             else
             {
-                Console.WriteLine("Not vaild input");
+                Console.WriteLine("\nNot a vaild input\n");
             }
+            
+            } while (parent != "female" && parent != "male");
             return parent;
         }
 
         public static void parentReference()
         {
-            if (parent.parentSelection() == "male")
+            if (parentSelection() == "male")
             {
                 address = "dad";
 
             }
-            else if (parent.parentSelection() == "female")
+            else if (parentSelection() == "female")
             {
                 address = "mum";
             }
@@ -71,7 +79,7 @@ namespace Project
                 address = "they";                 
             }
         }
-        
-    
+               
+        }
     }
-}
+
