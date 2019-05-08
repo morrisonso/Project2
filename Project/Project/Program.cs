@@ -10,11 +10,7 @@ namespace Project
 {
     class Program
     {
-<<<<<<< HEAD
         private static string parent, address;
-=======
-        public static string parent;
->>>>>>> 52d2ff9b62b1345083eab6bdb7e66f203bd37c63
 
         static void Main(string[] args)
         {
