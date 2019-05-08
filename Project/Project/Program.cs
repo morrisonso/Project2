@@ -15,7 +15,7 @@ namespace Project
         static void Main(string[] args)
         {
             //Declare Variables
-            
+
 
             //Introduction
             Console.WriteLine("                   ~*~*~* Q & A *~*~*~");
@@ -33,25 +33,30 @@ namespace Project
             //Test comment
 
         }
-
         public static void parentSelection()
         {
             string temp;
-            Console.Write("Is your parent female or male? ");
-            temp = Console.ReadLine();
-            if(temp.ToLower() == "male")
+            do
             {
-                parent = "male";
-            }
-            else if(temp.ToLower() == "female")
-            {
-                parent = "female";
-            }
-            else
-            {
-                Console.WriteLine("Not vaild input");
-            }
-        }
+                Console.Write("Is your parent female or male? ");
+                temp = Console.ReadLine();
+                
+                if (temp.ToLower() == "male")
+                {
+                    
+                    parent = "male";
+                    
+                }
+                else if (temp.ToLower() == "female")
+                {
+                    parent = "female";
+                }
+                else
+                {
+                    Console.WriteLine("\nNot a vaild input\n");
+                }
 
+            } while (parent != "female" && parent != "male");
+        }
     }
 }
