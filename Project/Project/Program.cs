@@ -23,7 +23,7 @@ namespace Project
             Console.WriteLine("Answer the questions and press 'enter' to submit your answer");
 
             //Code
-            
+            parentSelection();
 
 
 
@@ -39,12 +39,11 @@ namespace Project
             string temp;
             Console.Write("Is your parent female or male? ");
             temp = Console.ReadLine();
-            temp.ToLower();
-            if(temp == "male")
+            if(temp.ToLower() == "male")
             {
                 parent = "male";
             }
-            else if(temp == "female")
+            else if(temp.ToLower() == "female")
             {
                 parent = "female";
             }
