@@ -1,0 +1,31 @@
+Is your Computer working?
+Does it turn on?
+Does it make a noise(beep)?
+is the screen on?
+is it all wired up?
+do you know what operating system you have?
+	is it windows?
+	is it osx?
+	is it linux?
+
+Is your parent male or female?
+do they like animals
+Does your mum prefer sincere or gag presents?
+does your mum have a favourite colour?
+does your mum have any hobbies?
+does your mum like tv?
+does your mum like films?
+does your mum like self care?
+does your mum often have time for herself?
+are they into books? 
+what genre
+are they into sport
+are they religious
+do they like solving puzzles
+are they crafty?
+do they like sewing
+does she like baking
+do they like homemade gifts or store bought
+are they an indoors or outdoors person
+do they like vouchers or a physical present
+whats your price range?
