@@ -13,8 +13,8 @@ do they like animals
 Does your mum prefer sincere or gag presents?
 does your mum have a favourite colour?
 does your mum have any hobbies?
-does your mum like tv?
-does your mum like films?
+	does your mum like tv?
+	does your mum like films?
 does your mum like self care?
 does your mum often have time for herself?
 are they into books? 
