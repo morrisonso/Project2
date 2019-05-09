@@ -221,6 +221,9 @@ namespace Project
                 case "history":
                     Console.WriteLine("The most popular {0} TV show is Chambers(2019-)", tvShows);
                     break;
+                case "science":
+                    Console.WriteLine("The most popular {0} TV show is Planet Earth (2006)", tvShows);
+                    break;
                 default:
                     Console.WriteLine("it looks like {0} is not in our database", tvShows);
                     break;
@@ -275,7 +278,7 @@ namespace Project
             }
         }
 
-    
+ /*   
         private void GetQuestions()
         {
             string line;
@@ -288,7 +291,7 @@ namespace Project
             }
             sr.Close();
         }
-
+        */
     }
 }
 
