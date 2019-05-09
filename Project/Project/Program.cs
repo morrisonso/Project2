@@ -80,9 +80,10 @@ namespace Project
 
         public static void visualEntertainment()
         {
-            string temp, bookStyle;
+            string temp, bookStyle, popularGenre;
             string[] genreArray, genreResults;
             int[] genreCount;
+            int votes;
 
 
             genreResults = new string[8];
@@ -181,15 +182,20 @@ namespace Project
                     genreCount[i] += 1;
                 }
             }
+            Array.Sort(genreCount, genreArray);
+            foreach (int vote in genreCount)
+                Console.WriteLine(vote);
+            foreach (string genre in genreArray)
+                Console.WriteLine(genre);
+            popularGenre = genreArray[7];
+            votes = genreCount[7];
 
-        }
+            Console.WriteLine("The most popular genre overall for your "+address+" is: " + popularGenre + " with " + votes + " number of votes");
+                               
+
+               }
 
     
-            
-
-        
-
-
         private void GetQuestions()
         {
             string line;
