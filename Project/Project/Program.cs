@@ -52,17 +52,11 @@ namespace Project
                 temp = Console.ReadLine();
 
                 if (temp.ToLower() == "male")
-                {
                     parent = "male";
-                }
                 else if (temp.ToLower() == "female")
-                {
                     parent = "female";
-                }
                 else
-                {
                     Console.Write("Invalid input, try again. ");
-                }
             }
             while (parent != "female" && parent != "male");
             parentReference();
@@ -73,18 +67,14 @@ namespace Project
         public static string parentReference()
         {
             if (parent == "male")
-            {
                 address = "dad";
-
-            }
+                   
             else if (parent == "female")
-            {
                 address = "mum";
-            }
+            
             else if (parent != "male" || parent != "female")
-            {
                 address = "they";
-            }
+            
             return address;
         }
 
@@ -170,12 +160,8 @@ namespace Project
                     {
                         Console.Write("Does your " + address + " like " + genreArray[i] + " tv shows?   ");
                         temp = Console.ReadLine();
-                        if (temp.ToLower() == "yes")
-                        {
+                        if (temp.ToLower() == "yes")                        
                             tvGenre.Add(genreArray[i]);
-
-                        }
-
                     }
                 }
 
