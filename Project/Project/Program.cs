@@ -52,17 +52,11 @@ namespace Project
                 temp = Console.ReadLine();
 
                 if (temp.ToLower() == "male")
-                {
                     parent = "male";
-                }
                 else if (temp.ToLower() == "female")
-                {
                     parent = "female";
-                }
                 else
-                {
                     Console.Write("Invalid input, try again. ");
-                }
             }
             while (parent != "female" && parent != "male");
             parentReference();
@@ -73,18 +67,14 @@ namespace Project
         public static string parentReference()
         {
             if (parent == "male")
-            {
                 address = "dad";
-
-            }
+                   
             else if (parent == "female")
-            {
                 address = "mum";
-            }
+            
             else if (parent != "male" || parent != "female")
-            {
                 address = "they";
-            }
+            
             return address;
         }
 
@@ -170,12 +160,8 @@ namespace Project
                     {
                         Console.Write("Does your " + address + " like " + genreArray[i] + " tv shows?   ");
                         temp = Console.ReadLine();
-                        if (temp.ToLower() == "yes")
-                        {
+                        if (temp.ToLower() == "yes")                        
                             tvGenre.Add(genreArray[i]);
-
-                        }
-
                     }
                 }
 
@@ -194,6 +180,49 @@ namespace Project
                 {
                     genreCount[i] += 1;
                 }
+            }
+            switch (movies)
+            {
+                case "adventure":
+                    Console.WriteLine("Sounds like your parent would be interested in an adventure movie. " +
+                        "The most popular adventure movie is Indiana Jones: Raiders of the " +
+                        " Lost Ark (1981).");
+                    break;
+
+                case "action":
+                    Console.WriteLine("Sounds like your parent would be interested in an action movie. " +
+                        "The most popular action movie is The Dark Knight (2008)");
+                    break;
+
+                case "comedy":
+                    Console.WriteLine("Sounds like your parent would be interested in a comedy movie. " +
+                        "The most popular comedy movie is Superbad (2007)");
+                    break;
+
+                case "crime":
+                    Console.WriteLine("Sounds like your parent would be interested in a crime movie. " +
+                        "The most popular crime movie is Zodiac (2007)");
+                    break;
+
+                case "drama":
+                    Console.WriteLine("Sounds like your parent would be interested in a drama movie. " +
+                        "The most popular drama movie is The Godfather (1972)");
+                    break;
+
+                case "history":
+                    Console.WriteLine("Sounds like your parent would be interested in a history movie. " +
+                        "The most popular history movie is Kingdom of Heaven (2005)");
+                    break;
+
+                case "romance":
+                    Console.WriteLine("Sounds like your parent would be interested in a romance movie. " +
+                        "The most popular romance movie is The Notebook (2004)");
+                    break;
+
+                case "science":
+                    Console.WriteLine("Sounds like your parent would be interested in a science movie. " +
+                        "The most popular science movie is Interstellar (2014)");
+                    break;
             }
 
         }
