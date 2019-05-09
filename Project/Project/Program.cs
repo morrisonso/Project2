@@ -11,7 +11,7 @@ namespace Project
 {
     class Program
     {
-        private static string parent, popularGenre;
+        private static string parent, popularGenre, bookStyle;
         private static List<string> question = new List<string>();
         private static string address = "them";
 
@@ -80,7 +80,7 @@ namespace Project
 
         public static void visualEntertainment()
         {
-            string temp, bookStyle;
+            string temp;
             string[] genreArray, genreResults;
             int[] genreCount;
             int votes;
@@ -277,6 +277,87 @@ namespace Project
                     break;
             }
         }
+        private static void bookAnswer(string genre)
+        {
+            if (bookStyle == "fiction")
+            {
+                switch(genre)
+                {
+                    case "adventure":
+
+                        break;
+
+                    case "action":
+
+                        break;
+
+                    case "comedy":
+
+                        break;
+
+                    case "crime":
+
+                        break;
+
+                    case "drama":
+
+                        break;
+
+                    case "history":
+
+                        break;
+
+                    case "romance":
+
+                        break;
+
+                    case "science":
+
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else {
+                switch (genre)
+                {
+                    case "adventure":
+
+                        break;
+
+                    case "action":
+
+                        break;
+
+                    case "comedy":
+
+                        break;
+
+                    case "crime":
+
+                        break;
+
+                    case "drama":
+
+                        break;
+
+                    case "history":
+
+                        break;
+
+                    case "romance":
+
+                        break;
+
+                    case "science":
+
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+            
 
  /*   
         private void GetQuestions()
