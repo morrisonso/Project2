@@ -184,24 +184,44 @@ namespace Project
             switch (movies)
             {
                 case "adventure":
-                    Console.WriteLine("The most popular adventure movie is Indiana Jones: Raiders of the " +
+                    Console.WriteLine("Sounds like your parent would be interested in an adventure movie. " +
+                        "The most popular adventure movie is Indiana Jones: Raiders of the " +
                         " Lost Ark (1981).");
                     break;
 
                 case "action":
-                    Console.WriteLine("");
+                    Console.WriteLine("Sounds like your parent would be interested in an action movie. " +
+                        "The most popular action movie is The Dark Knight (2008)");
                     break;
 
                 case "comedy":
-                    Console.WriteLine("");
+                    Console.WriteLine("Sounds like your parent would be interested in a comedy movie. " +
+                        "The most popular comedy movie is Superbad (2007)");
                     break;
 
                 case "crime":
-                    Console.WriteLine("");
+                    Console.WriteLine("Sounds like your parent would be interested in a crime movie. " +
+                        "The most popular crime movie is Zodiac (2007)");
                     break;
 
                 case "drama":
-                    Console.WriteLine("");
+                    Console.WriteLine("Sounds like your parent would be interested in a drama movie. " +
+                        "The most popular drama movie is The Godfather (1972)");
+                    break;
+
+                case "history":
+                    Console.WriteLine("Sounds like your parent would be interested in a history movie. " +
+                        "The most popular history movie is Kingdom of Heaven (2005)");
+                    break;
+
+                case "romance":
+                    Console.WriteLine("Sounds like your parent would be interested in a romance movie. " +
+                        "The most popular romance movie is The Notebook (2004)");
+                    break;
+
+                case "science":
+                    Console.WriteLine("Sounds like your parent would be interested in a science movie. " +
+                        "The most popular science movie is Interstellar (2014)");
                     break;
             }
 
