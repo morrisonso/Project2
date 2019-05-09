@@ -1,0 +1,92 @@
+#Books
+
+Genre 
+
+Adventure
+Fiction
+	Treasure Island - Louis Stevenson - 1882
+	The call of the wild - Jack London - 1903
+	The Lord of the Rings - 1954 - J. R. R. Tolkien
+	King Solomon's Mines - 1885 - H. Rider Haggard
+Nonfiction
+	Into Thin Air - 1997 - Jon Krakauer
+	Into the Wild - 1996 - Jon Krakauer
+	The Right Stuff - 1979  - Tom Wolfe
+	
+Action
+Fiction
+	Spartan Gold - 2009 - Clive Cussler,  Grant Blackwood
+	The Striker - 2013 - Clive Cussler,  Justin Scott
+	The Thief - 2012 - Justin Scott 
+Nonfiction 
+	The Vagrant - 2016 - Peter Newman
+	The Winner - 2018 - David Baldacci
+	Chosen - 2010 - Ted Dekker
+	All the Light We Cannot See - 2015 - Anthony Doerr
+Comedy
+Fiction
+	Good Omens - 1990 - Neil Gaiman and Terry Pratchett
+	The Ultimate Hitchhiker's Guide - 1979 - Douglas Adams
+	A Confederacy of Dunces - 1980 - John Kennedy Toole
+	Where'd You Go, Bernadette - 2012 - Maria Semple
+Nonfiction
+	I Feel Bad About My Neck: And Other Thoughts on Being a Woman - 2006 - Nora Ephron
+	I Was Told There'd Be Cake - 2008 - Sloane Crosley
+	A Supposedly Fun Thing I'll Never Do Again: Essays and Arguments - 1997 - David Foster Wallace
+	Gulp: Adventures on the Alimentary Canal - 2013 - Mary Roach
+Crime
+Fiction
+	In Cold Blood - 1965 - Truman Capote
+	The Top 100 Crime Novels of All Time - 1990 - Crime Writers' Association
+	The Girl with the Dragon Tattoo - 2005 - Stieg Larsson
+	The Big Sleep - 1939 - Raymond Chandler
+Nonfiction
+	Helter Skelter - 1974 - Curt Gentry and Vincent Bugliosi
+	The Stranger Beside Me - 1980 - Ann Rule
+	The Devil in the White City: Murder, Magic, and Madness at the Fair that Changed America - 2003 - Erik Larson
+	Killers of the Flower Moon: The Osage Murders and the Birth of the FBI - 2017 - David Grann
+Drama
+Fiction
+	To Kill a Mockingbird - 1960 - Harper Lee
+	The Kite Runner - 2003 - Khaled Hosseini
+	Of Mice and Men - 1937 - John Steinbeck
+	The Alchemist - 1988 - Paulo Coelho
+Nonfiction
+	Blood River: A Journey to Africa's Broken Heart - 2008 - Tim Butcher
+	The Trigger: Hunting the Assassin Who Brought the World to War - 2014 - Tim Butcher 
+	Midnight in the Garden of Good and Evil - 1994 - John Berendt
+
+History
+Fiction
+	Beloved - 1987 - Toni Morrison
+	All the Light We Cannot See - 2014 - Anthony Doerr
+	Lilac Girls: A Novel - 1939 - Martha Hall Kelly
+	Wolf Hall - 2009 - Hilary Mantel
+Nonfiction
+	Bury My Heart at Wounded Knee - 1970 - Dee Brown
+	A People's History of the United States - 1990 - Howard Zinn
+	Guns, Germs, and Steel - 1997 - Jared Diamond
+	Hiroshima - 1946 - John Hersey
+Romance
+Fiction
+	Love Story - 1970 - Erich Sega
+	Pride and Prejudice - 1813 - Jane Austen
+	Outlander - 1991 - Diana Gabaldon
+	The Kiss Quotient - 2018 - Helen Hoang
+Nonfiction
+	Modern Romance: An Investigation - 2015 - Aziz Ansari and Eric Klinenberg
+	Educated - 2018 - Tara Westover
+	A Room of One's Own - 1929 - Virginia Woolf
+	Dead Wake: The Last Crossing of the Lusitania - 2015 - Erik Larson
+
+Science
+Fiction
+	1984 - 1949 - George Orwell
+	Dune - 1965 - Frank Herbert
+	Ender's Game - 1985 - Orson Scott Card
+	Neuromancer - 1984 - William Gibson
+Nonfiction
+	The Immortal Life of Henrietta Lacks - 2010 - Rebecca Skloot
+	The Poisoner's Handbook - 2010 - Deborah Blum
+	Silent Spring - 1962 - Rachel Carson
+	A Short History of Nearly Everything - 2003 - Bill Bryson
