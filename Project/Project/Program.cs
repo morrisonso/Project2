@@ -195,6 +195,29 @@ namespace Project
                     genreCount[i] += 1;
                 }
             }
+            switch (movies)
+            {
+                case "adventure":
+                    Console.WriteLine("The most popular adventure movie is Indiana Jones: Raiders of the " +
+                        " Lost Ark (1981).");
+                    break;
+
+                case "action":
+                    Console.WriteLine("");
+                    break;
+
+                case "comedy":
+                    Console.WriteLine("");
+                    break;
+
+                case "crime":
+                    Console.WriteLine("");
+                    break;
+
+                case "drama":
+                    Console.WriteLine("");
+                    break;
+            }
 
         }
 
