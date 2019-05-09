@@ -2,6 +2,7 @@
 //Git Group Project
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +11,8 @@ namespace Project
 {
     class Program
     {
-<<<<<<< HEAD
         private static string parent, address;
-=======
-        public static string parent;
->>>>>>> 52d2ff9b62b1345083eab6bdb7e66f203bd37c63
+        private static List<string> question = new List<string>();
 
         static void Main(string[] args)
         {
@@ -80,7 +78,20 @@ namespace Project
                 address = "they";                 
             }
         }
-               
+
+        private void GetQuestions()
+        {
+            string line;
+            StreamReader sr = new StreamReader(@"Questions.txt");
+
+            while ((line = sr.ReadLine()) != null)
+            //while the text file has content add it to the list
+            {
+                question.Add(sr.ReadLine());
+            }
+            sr.Close();
         }
+
     }
+}
 
