@@ -323,35 +323,35 @@ namespace Project
                 switch (genre)
                 {
                     case "adventure":
-
+                        Console.WriteLine("Into Thin Air - 1997 - Jon Krakauer \nInto the Wild - 1996 - Jon Krakauer \nThe Right Stuff - 1979 - Tom Wolfe");
                         break;
 
                     case "action":
-
+                        Console.WriteLine("The Vagrant - 2016 - Peter Newman \nThe Winner - 2018 - David Baldacci \nChosen - 2010 - Ted Dekker \nAll the Light We Cannot See - 2015 - Anthony Doerr");
                         break;
 
                     case "comedy":
-
+                        Console.WriteLine("I Feel Bad About My Neck: And Other Thoughts on Being a Woman - 2006 - Nora Ephron \nI Was Told There'd Be Cake - 2008 - Sloane Crosley \nA Supposedly Fun Thing I'll Never Do Again: Essays and Arguments - 1997 - David Foster Wallace \nGulp: Adventures on the Alimentary Canal - 2013 - Mary Roach");
                         break;
 
                     case "crime":
-
+                        Console.WriteLine("Helter Skelter - 1974 - Curt Gentry and Vincent Bugliosi \nThe Stranger Beside Me - 1980 - Ann Rule \nThe Devil in the White City: Murder, Magic, and Madness at the Fair that Changed America - 2003 - Erik Larson \nKillers of the Flower Moon: The Osage Murders and the Birth of the FBI - 2017 - David Grann");
                         break;
 
                     case "drama":
-
+                        Console.WriteLine("Blood River: A Journey to Africa's Broken Heart - 2008 - Tim Butcher \nThe Trigger: Hunting the Assassin Who Brought the World to War - 2014 - Tim Butcher \nMidnight in the Garden of Good and Evil - 1994 - John Berendt");
                         break;
 
                     case "history":
-
+                        Console.WriteLine("Bury My Heart at Wounded Knee - 1970 - Dee Brown \nA People's History of the United States - 1990 - Howard Zinn \nGuns, Germs, and Steel - 1997 - Jared Diamond \nHiroshima - 1946 - John Hersey");
                         break;
 
                     case "romance":
-
+                        Console.WriteLine("Modern Romance: An Investigation - 2015 - Aziz Ansari and Eric Klinenberg \nEducated - 2018 - Tara Westover \nA Room of One's Own - 1929 - Virginia Woolf \nDead Wake: The Last Crossing of the Lusitania - 2015 - Erik Larson");
                         break;
 
                     case "science":
-
+                        Console.WriteLine("The Immortal Life of Henrietta Lacks - 2010 - Rebecca Skloot \nThe Poisoner's Handbook - 2010 - Deborah Blum \nSilent Spring - 1962 - Rachel Carson \n A Short History of Nearly Everything - 2003 - Bill Bryson");
                         break;
                     default:
                         break;
