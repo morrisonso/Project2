@@ -14,13 +14,14 @@ namespace Project
         private static string parent, popularGenre, bookStyle;
         private static List<string> question = new List<string>();
         private static string address = "them";
+        private static Boolean book, film, tv; 
 
         static void Main(string[] args)
         {
 
             //Introduction
-            Console.WriteLine("  ~*~*~* What Gift Should You Get for Your Parent? *~*~*~");
-            Console.WriteLine("===========================================================");
+            Console.WriteLine("  ~*~*~* Lets Pick Out Some Entertainment For Your Mum Or Dad *~*~*~");
+            Console.WriteLine("====================================================================");
             Console.WriteLine("Answer the questions and press 'enter' to submit an answer");
             Console.WriteLine("");
 
@@ -30,11 +31,13 @@ namespace Project
             parentSelection();
             Console.WriteLine();
             visualEntertainment();
-
-
-
-            //Pause
             Console.WriteLine();
+            entertainmentResults();
+
+
+            //End
+            Console.WriteLine();
+            Console.WriteLine("Press enter to exit.");
             Console.ReadLine();
 
 
@@ -48,19 +51,19 @@ namespace Project
             do
             {
 
-                Console.Write("Is your parent female or male?       ");
+                Console.WriteLine("Is your parent female or male? F or M");
                 temp = Console.ReadLine();
 
-                if (temp.ToLower() == "male")
+                if (temp.ToLower() == "m")
                     parent = "male";
-                else if (temp.ToLower() == "female")
+                else if (temp.ToLower() == "f")
                     parent = "female";
                 else
                     Console.Write("Invalid input, try again. ");
             }
             while (parent != "female" && parent != "male");
             parentReference();
-            Console.Write("Cool! Lets get something for your " + address + " then.");
+            Console.WriteLine("Cool! Lets get something for your " + address + " then.");
             return parent;
         }
 
@@ -78,7 +81,7 @@ namespace Project
             return address;
         }
 
-        public static void visualEntertainment()
+        public static string visualEntertainment()
         {
             string temp;
             string[] genreArray, genreResults;
@@ -96,32 +99,35 @@ namespace Project
             do
             {
                 /*Like books, films or tv general **/
-                Console.Write("Does your " + address + " like books, films, or tv? (Yes or No)      ");
+                Console.WriteLine("Does your " + address + " like books, films, or tv? (Yes or No)");
                 temp = Console.ReadLine();
             } while (!(temp.ToLower() == "yes" || temp.ToLower() == "no"));
             if (temp == "yes")
             {
                 /* like books */
-                Console.Write("Does your " + address + " like books?        ");
+                Console.WriteLine("Does your " + address + " like books?        ");
                 temp = Console.ReadLine();
                 if (temp.ToLower() == "yes")
                 {
+                    book = true;
                     /*fiction or non fiction books*/
-                    Console.Write("Does your " + address + " prefer ficton or non-fiction books?    ");
-                    temp = Console.ReadLine();
-                    if (temp.ToLower() == "fiction" && temp.ToLower() != "non-fiction")
+                    do
                     {
-                        bookStyle = "fiction";
-
-                    }
-                    else
-                    {
-                        bookStyle = "non-fiction";
-                    }
+                        Console.WriteLine("Does your " + address + " prefer ficton or non-fiction books? F or N");
+                        temp = Console.ReadLine();
+                        if (temp.ToLower() == "f")
+                        {
+                            bookStyle = "fiction";
+                        }
+                        else if (temp.ToLower() == "n")
+                        {
+                            bookStyle = "non-fiction";
+                        }
+                    } while (temp.ToLower() != "f" && temp.ToLower() != "n");
                     /* what genre books */
                     for (int i = 0; i < genreArray.Length; i++)
                     {
-                        Console.Write("Does your " + address + " like " + genreArray[i] + " books?      ");
+                        Console.WriteLine("Does your " + address + " like " + genreArray[i] + " books? Yes or No");
                         temp = Console.ReadLine();
                         if (temp.ToLower() == "yes")
                         {
@@ -136,13 +142,14 @@ namespace Project
 
                 }
                 /** film genre preferences */
-                Console.Write("Does your " + address + " like films?    ");
+                Console.WriteLine("Does your " + address + " like films? Yes or No");
                 temp = Console.ReadLine();
                 if (temp.ToLower() == "yes")
                 {
+                    film = true;
                     for (int i = 0; i < genreArray.Length; i++)
                     {
-                        Console.Write("Does your " + address + " like " + genreArray[i] + " films?      ");
+                        Console.WriteLine("Does your " + address + " like " + genreArray[i] + " films?      ");
                         temp = Console.ReadLine();
                         if (temp.ToLower() == "yes")
                         {
@@ -153,13 +160,14 @@ namespace Project
                     }
                 }
                 /** tv genre preferences */
-                Console.Write("Does your " + address + " watch tv shows?    ");
+                Console.WriteLine("Does your " + address + " watch tv shows?    ");
                 temp = Console.ReadLine();
                 if (temp.ToLower() == "yes")
                 {
+                    tv = true;
                     for (int i = 0; i < genreArray.Length; i++)
                     {
-                        Console.Write("Does your " + address + " like " + genreArray[i] + " tv shows?   ");
+                        Console.WriteLine("Does your " + address + " like " + genreArray[i] + " tv shows?   ");
                         temp = Console.ReadLine();
                         if (temp.ToLower() == "yes")
                             tvGenre.Add(genreArray[i]);
@@ -183,15 +191,39 @@ namespace Project
                 }
             }
             Array.Sort(genreCount, genreArray);
+            /**
             foreach (int vote in genreCount)
                 Console.WriteLine(vote);
             foreach (string genre in genreArray)
                 Console.WriteLine(genre);
+            **/
             popularGenre = genreArray[7];
             votes = genreCount[7];
+            if (book != false && film != false && tv != false)
+            {
+                Console.WriteLine("The most popular genre overall for your " + address + " is: " + popularGenre + " with " + votes + " number of votes");
+            }
+                return popularGenre;
+        }
 
-            Console.WriteLine("The most popular genre overall for your " + address + " is: " + popularGenre + " with " + votes + " number of votes");
-        
+        public static void entertainmentResults()
+        {
+            if (book == true)
+            {
+                bookAnswer(visualEntertainment());
+            }
+            if (film == true)
+            {
+                moviesAnswer(visualEntertainment());
+            }
+            if (tv == true)
+            {
+                TvShowAnswer(visualEntertainment());
+            }
+            else if (book==false && film==false && tv == false)
+            {
+                Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv!");
+            }
         }
 
         private static void TvShowAnswer(string tvShows)
@@ -373,7 +405,11 @@ namespace Project
             }
             sr.Close();
         }
-        */
+      
+         * */
+         
     }
+
+    
 }
 
