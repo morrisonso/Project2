@@ -284,35 +284,36 @@ namespace Project
                 switch(genre)
                 {
                     case "adventure":
+                        Console.WriteLine("Treasure Island - Louis Stevenson - 1882 \nThe call of the wild - Jack London - 1903 \nThe Lord of the Rings - 1954 - J.R.R.Tolkien \nKing Solomon's Mines - 1885 - H. Rider Haggard");
 
                         break;
 
                     case "action":
-
+                        Console.WriteLine("Spartan Gold - 2009 - Clive Cussler and  Grant Blackwood \nThe Striker - 2013 - Clive Cussler and  Justin Scott \nThe Thief - 2012 - Justin Scott ");
                         break;
 
                     case "comedy":
-
+                        Console.WriteLine("Good Omens - 1990 - Neil Gaiman and Terry Pratchett \nThe Ultimate Hitchhiker's Guide - 1979 - Douglas Adams \nA Confederacy of Dunces - 1980 - John Kennedy Toole \nWhere'd You Go, Bernadette - 2012 - Maria Semple");
                         break;
 
                     case "crime":
-
+                        Console.WriteLine("In Cold Blood - 1965 - Truman Capote \nThe Top 100 Crime Novels of All Time - 1990 - Crime Writers' Association \nThe Girl with the Dragon Tattoo - 2005 - Stieg Larsson \nThe Big Sleep - 1939 - Raymond Chandler");
                         break;
 
                     case "drama":
-
+                        Console.WriteLine("To Kill a Mockingbird - 1960 - Harper Lee \nThe Kite Runner - 2003 - Khaled Hosseini \nOf Mice and Men - 1937 - John Steinbeck  \nThe Alchemist - 1988 - Paulo Coelho");
                         break;
 
                     case "history":
-
+                        Console.WriteLine("Beloved - 1987 - Toni Morrison \nAll the Light We Cannot See - 2014 - Anthony Doerr \nLilac Girls: A Novel - 1939 - Martha Hall Kelly \nWolf Hall - 2009 - Hilary Mantel");
                         break;
 
                     case "romance":
-
+                        Console.WriteLine("Love Story - 1970 - Erich Sega \nPride and Prejudice - 1813 - Jane Austen \nOutlander - 1991 - Diana Gabaldon \nThe Kiss Quotient - 2018 - Helen Hoang");
                         break;
 
                     case "science":
-
+                        Console.WriteLine("1984 - 1949 - George Orwell \nDune - 1965 - Frank Herbert \nEnder's Game - 1985 - Orson Scott Card \nNeuromancer - 1984 - William Gibson");
                         break;
                     default:
                         break;
