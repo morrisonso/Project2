@@ -20,9 +20,9 @@ namespace Project
         {
 
             //Introduction
-            Console.WriteLine("  ~*~*~* Lets Pick Out Some Entertainment For Your Mum Or Dad *~*~*~");
+            Console.WriteLine("  ~*~*~* Let's Pick Out Some Entertainment For Your Mum Or Dad *~*~*~");
             Console.WriteLine("====================================================================");
-            Console.WriteLine("Answer the questions and press 'enter' to submit an answer");
+            Console.WriteLine("Answer the questions and press 'enter' to submit an answer.");
             Console.WriteLine("");
 
             //Code
@@ -63,7 +63,7 @@ namespace Project
             }
             while (parent != "female" && parent != "male");
             parentReference();
-            Console.WriteLine("Cool! Lets get something for your " + address + " then.");
+            Console.WriteLine("Cool! Let's get something for your " + address + ", then.");
             return parent;
         }
 
@@ -99,7 +99,7 @@ namespace Project
             do
             {
                 /*Like books, films or tv general **/
-                Console.WriteLine("Does your " + address + " like books, films, or tv? (Yes or No)");
+                Console.WriteLine("Does your " + address + " like books, films, and/or tv? (Yes or No)");
                 temp = Console.ReadLine();
             } while (!(temp.ToLower() == "yes" || temp.ToLower() == "no"));
             if (temp == "yes")
@@ -222,7 +222,7 @@ namespace Project
             }
             else if (book==false && film==false && tv == false)
             {
-                Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv!");
+                Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv! We can't help you.");
             }
         }
 
