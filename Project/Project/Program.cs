@@ -210,15 +210,15 @@ namespace Project
         {
             if (book == true)
             {
-                bookAnswer(visualEntertainment());
+                bookAnswer(popularGenre);
             }
             if (film == true)
             {
-                moviesAnswer(visualEntertainment());
+                moviesAnswer(popularGenre);
             }
             if (tv == true)
             {
-                TvShowAnswer(visualEntertainment());
+                TvShowAnswer(popularGenre);
             }
             else if (book==false && film==false && tv == false)
             {
@@ -228,36 +228,38 @@ namespace Project
 
         private static void TvShowAnswer(string tvShows)
         {
+            Console.WriteLine();
+            Console.WriteLine("Most popular " + tvShows + " tv show:");
             switch (tvShows)
             {
                 case "adventure":
-                    Console.WriteLine("The most popular {0} TV show is Game of Thrones(2011-)", tvShows);
+                    Console.WriteLine("Game of Thrones(2011-)");
                     break;
 
                 case "action":
-                    Console.WriteLine("The most popular {0} TV show is Gotham(2014-2019)", tvShows);
+                    Console.WriteLine("Gotham(2014-2019)");
                     break;
 
                 case "comedy":
-                    Console.WriteLine("The most popular {0} TV show is The Big Bang Theory(2007-)", tvShows);
+                    Console.WriteLine("The Big Bang Theory(2007-)");
                     break;
 
                 case "crime":
-                    Console.WriteLine("The most popular {0} TV show is The Act(2019-)", tvShows);
+                    Console.WriteLine("The Act(2019-)");
                     break;
 
                 case "drama":
-                    Console.WriteLine("The most popular {0} TV show is Chambers(2019-)", tvShows);
+                    Console.WriteLine("Chambers(2019-)");
                     break;
 
                 case "history":
-                    Console.WriteLine("The most popular {0} TV show is Chambers(2019-)", tvShows);
+                    Console.WriteLine("Chambers(2019-)");
                     break;
                 case "science":
-                    Console.WriteLine("The most popular {0} TV show is Planet Earth (2006)", tvShows);
+                    Console.WriteLine("Planet Earth (2006)");
                     break;
                 default:
-                    Console.WriteLine("it looks like {0} is not in our database", tvShows);
+                    Console.WriteLine("it looks like {0} is not in our database");
                     break;
 
             }
@@ -265,57 +267,53 @@ namespace Project
 
         private static void moviesAnswer(string movies)
         {
+            Console.WriteLine();
+            Console.WriteLine("Most popular " + movies + " film:");
             switch (movies)
             {
                 case "adventure":
-                    Console.WriteLine("Sounds like your parent would be interested in an adventure movie. " +
-                        "The most popular adventure movie is Indiana Jones: Raiders of the " +
-                        " Lost Ark (1981).");
+                    Console.WriteLine("Indiana Jones: Raiders of the Lost Ark (1981).");
                     break;
 
                 case "action":
-                    Console.WriteLine("Sounds like your parent would be interested in an action movie. " +
-                        "The most popular action movie is The Dark Knight (2008)");
+                    Console.WriteLine("The Dark Knight (2008)");
                     break;
 
                 case "comedy":
-                    Console.WriteLine("Sounds like your parent would be interested in a comedy movie. " +
-                        "The most popular comedy movie is Superbad (2007)");
+                    Console.WriteLine("Superbad (2007)");
                     break;
 
                 case "crime":
-                    Console.WriteLine("Sounds like your parent would be interested in a crime movie. " +
-                        "The most popular crime movie is Zodiac (2007)");
+                    Console.WriteLine("Zodiac (2007)");
                     break;
 
                 case "drama":
-                    Console.WriteLine("Sounds like your parent would be interested in a drama movie. " +
-                        "The most popular drama movie is The Godfather (1972)");
+                    Console.WriteLine("The Godfather (1972)");
                     break;
 
                 case "history":
-                    Console.WriteLine("Sounds like your parent would be interested in a history movie. " +
-                        "The most popular history movie is Kingdom of Heaven (2005)");
+                    Console.WriteLine("Kingdom of Heaven (2005)");
                     break;
 
                 case "romance":
-                    Console.WriteLine("Sounds like your parent would be interested in a romance movie. " +
-                        "The most popular romance movie is The Notebook (2004)");
+                    Console.WriteLine("The Notebook (2004)");
                     break;
 
                 case "science":
-                    Console.WriteLine("Sounds like your parent would be interested in a science movie. " +
-                        "The most popular science movie is Interstellar (2014)");
+                    Console.WriteLine("Interstellar (2014)");
                     break;
             }
         }
         private static void bookAnswer(string genre)
         {
+            Console.WriteLine();   
+            Console.WriteLine("Most popular " + bookStyle + " " + genre + " books:");
             if (bookStyle == "fiction")
             {
                 switch(genre)
                 {
                     case "adventure":
+                       
                         Console.WriteLine("Treasure Island - Louis Stevenson - 1882 \nThe call of the wild - Jack London - 1903 \nThe Lord of the Rings - 1954 - J.R.R.Tolkien \nKing Solomon's Mines - 1885 - H. Rider Haggard");
 
                         break;
