@@ -21,9 +21,9 @@ namespace Project
         {
 
             //Introduction
-            Console.WriteLine("  ~*~*~* Lets Pick Out Some Entertainment For Your Mum Or Dad *~*~*~");
+            Console.WriteLine("~*~*~* Let's Pick Out Some Entertainment For Your Mum Or Dad *~*~*~");
             Console.WriteLine("====================================================================");
-            Console.WriteLine("Answer the questions and press 'enter' to submit an answer");
+            Console.WriteLine("    Answer the questions and press 'enter' to submit an answer.     ");
             Console.WriteLine("");
 
             //Code
@@ -64,7 +64,7 @@ namespace Project
             }
             while (parent != "female" && parent != "male");
             parentReference();
-            Console.WriteLine("Cool! Lets pick out some entertainment for your " + address + " then.");
+            Console.WriteLine("Cool! Let's get something for your " + address + ", then.");
             return parent;
         }
 
@@ -72,13 +72,13 @@ namespace Project
         {
             if (parent == "male")
                 address = "dad";
-                   
+
             else if (parent == "female")
                 address = "mum";
-            
+
             else if (parent != "male" || parent != "female")
                 address = "they";
-            
+
             return address;
         }
 
@@ -87,7 +87,7 @@ namespace Project
             string temp;
             string[] genreArray, genreResults;
             int[] genreCount;
-            
+
 
 
             genreResults = new string[8];
@@ -210,16 +210,10 @@ namespace Project
                 }
             }
             Array.Sort(genreCount, genreArray);
-            /**
-            foreach (int vote in genreCount)
-                Console.WriteLine(vote);
-            foreach (string genre in genreArray)
-                Console.WriteLine(genre);
-            **/
             popularGenre = genreArray[7];
             votes = genreCount[7];
-            
-                return popularGenre;
+
+            return popularGenre;
         }
 
         public static void entertainmentResults()
@@ -244,12 +238,12 @@ namespace Project
                 }
                 else if (book == false && film == false && tv == false)
                 {
-                    Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv!");
+                    Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv! We can't help you.");
                 }
             }
             else
             {
-                Console.WriteLine("Looks like your " + address + " isn't interested in any of our reccomended genres!");
+                Console.WriteLine("Looks like your " + address + " isn't interested in any of our recommended genres!");
             }
         }
 
@@ -333,14 +327,14 @@ namespace Project
         }
         private static void bookAnswer(string genre)
         {
-            Console.WriteLine();   
+            Console.WriteLine();
             Console.WriteLine("Most popular " + bookStyle + " " + genre + " books:");
             if (bookStyle == "fiction")
             {
-                switch(genre)
+                switch (genre)
                 {
                     case "adventure":
-                       
+
                         Console.WriteLine("Treasure Island - Louis Stevenson - 1882 \nThe call of the wild - Jack London - 1903 \nThe Lord of the Rings - 1954 - J.R.R.Tolkien \nKing Solomon's Mines - 1885 - H. Rider Haggard");
 
                         break;
@@ -376,7 +370,8 @@ namespace Project
                         break;
                 }
             }
-            else {
+            else
+            {
                 switch (genre)
                 {
                     case "adventure":
@@ -415,26 +410,9 @@ namespace Project
                 }
             }
         }
-            
 
- /*   
-        private void GetQuestions()
-        {
-            string line;
-            StreamReader sr = new StreamReader(@"Questions.txt");
-
-            while ((line = sr.ReadLine()) != null)
-            //while the text file has content add it to the list
-            {
-                question.Add(sr.ReadLine());
-            }
-            sr.Close();
-        }
-      
-         * */
-         
     }
 
-    
+
 }
 
