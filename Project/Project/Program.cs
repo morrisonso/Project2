@@ -14,7 +14,8 @@ namespace Project
         private static string parent, popularGenre, bookStyle;
         private static List<string> question = new List<string>();
         private static string address = "them";
-        private static Boolean book, film, tv; 
+        private static Boolean book, film, tv;
+        private static int votes;
 
         static void Main(string[] args)
         {
@@ -63,7 +64,7 @@ namespace Project
             }
             while (parent != "female" && parent != "male");
             parentReference();
-            Console.WriteLine("Cool! Lets get something for your " + address + " then.");
+            Console.WriteLine("Cool! Lets pick out some entertainment for your " + address + " then.");
             return parent;
         }
 
@@ -86,7 +87,7 @@ namespace Project
             string temp;
             string[] genreArray, genreResults;
             int[] genreCount;
-            int votes;
+            
 
 
             genreResults = new string[8];
@@ -99,15 +100,18 @@ namespace Project
             do
             {
                 /*Like books, films or tv general **/
-                Console.WriteLine("Does your " + address + " like books, films, or tv? (Yes or No)");
+                Console.WriteLine("Does your " + address + " like books, films, or tv? (Y or N)");
                 temp = Console.ReadLine();
-            } while (!(temp.ToLower() == "yes" || temp.ToLower() == "no"));
-            if (temp == "yes")
+            } while (!(temp.ToLower() == "y" || temp.ToLower() == "n"));
+            if (temp.ToLower() == "y")
             {
-                /* like books */
-                Console.WriteLine("Does your " + address + " like books?        ");
-                temp = Console.ReadLine();
-                if (temp.ToLower() == "yes")
+                do
+                {
+                    /* like books */
+                    Console.WriteLine("Does your " + address + " like books? (Y or N)");
+                    temp = Console.ReadLine();
+                } while (temp.ToLower() != "y" && temp.ToLower() != "n");
+                if (temp.ToLower() == "y")
                 {
                     book = true;
                     /*fiction or non fiction books*/
@@ -127,9 +131,12 @@ namespace Project
                     /* what genre books */
                     for (int i = 0; i < genreArray.Length; i++)
                     {
-                        Console.WriteLine("Does your " + address + " like " + genreArray[i] + " books? Yes or No");
-                        temp = Console.ReadLine();
-                        if (temp.ToLower() == "yes")
+                        do
+                        {
+                            Console.WriteLine("Does your " + address + " like " + genreArray[i] + " books? (Y or N)");
+                            temp = Console.ReadLine();
+                        } while (temp.ToLower() != "y" && temp.ToLower() != "n");
+                        if (temp.ToLower() == "y")
                         {
                             bookGenre.Add(genreArray[i]);
 
@@ -142,16 +149,22 @@ namespace Project
 
                 }
                 /** film genre preferences */
-                Console.WriteLine("Does your " + address + " like films? Yes or No");
-                temp = Console.ReadLine();
-                if (temp.ToLower() == "yes")
+                do
+                {
+                    Console.WriteLine("Does your " + address + " like films? (Y or N)");
+                    temp = Console.ReadLine();
+                } while (temp.ToLower() != "y" && temp.ToLower() != "n");
+                if (temp.ToLower() == "y")
                 {
                     film = true;
                     for (int i = 0; i < genreArray.Length; i++)
                     {
-                        Console.WriteLine("Does your " + address + " like " + genreArray[i] + " films?      ");
-                        temp = Console.ReadLine();
-                        if (temp.ToLower() == "yes")
+                        do
+                        {
+                            Console.WriteLine("Does your " + address + " like " + genreArray[i] + " films? (Y or N)");
+                            temp = Console.ReadLine();
+                        } while (temp.ToLower() != "y" && temp.ToLower() != "n");
+                        if (temp.ToLower() == "y")
                         {
                             filmGenre.Add(genreArray[i]);
 
@@ -160,15 +173,21 @@ namespace Project
                     }
                 }
                 /** tv genre preferences */
-                Console.WriteLine("Does your " + address + " watch tv shows?    ");
-                temp = Console.ReadLine();
-                if (temp.ToLower() == "yes")
+                do
+                {
+                    Console.WriteLine("Does your " + address + " watch tv shows? (Y or N)");
+                    temp = Console.ReadLine();
+                } while (temp.ToLower() != "y" && temp.ToLower() != "n");
+                if (temp.ToLower() == "y")
                 {
                     tv = true;
                     for (int i = 0; i < genreArray.Length; i++)
                     {
-                        Console.WriteLine("Does your " + address + " like " + genreArray[i] + " tv shows?   ");
-                        temp = Console.ReadLine();
+                        do
+                        {
+                            Console.WriteLine("Does your " + address + " like " + genreArray[i] + " tv shows? (Y or N)");
+                            temp = Console.ReadLine();
+                        } while (temp.ToLower() != "y" && temp.ToLower() != "n");
                         if (temp.ToLower() == "yes")
                             tvGenre.Add(genreArray[i]);
                     }
@@ -199,30 +218,38 @@ namespace Project
             **/
             popularGenre = genreArray[7];
             votes = genreCount[7];
-            if (book != false && film != false && tv != false)
-            {
-                Console.WriteLine("The most popular genre overall for your " + address + " is: " + popularGenre + " with " + votes + " number of votes");
-            }
+            
                 return popularGenre;
         }
 
         public static void entertainmentResults()
         {
-            if (book == true)
+            if (votes != 0)
             {
-                bookAnswer(popularGenre);
+                if (book != false && film != false && tv != false)
+                {
+                    Console.WriteLine("The most popular genre overall for your " + address + " is: " + popularGenre + " with " + votes + " number of votes");
+                }
+                if (book == true)
+                {
+                    bookAnswer(popularGenre);
+                }
+                if (film == true)
+                {
+                    moviesAnswer(popularGenre);
+                }
+                if (tv == true)
+                {
+                    TvShowAnswer(popularGenre);
+                }
+                else if (book == false && film == false && tv == false)
+                {
+                    Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv!");
+                }
             }
-            if (film == true)
+            else
             {
-                moviesAnswer(popularGenre);
-            }
-            if (tv == true)
-            {
-                TvShowAnswer(popularGenre);
-            }
-            else if (book==false && film==false && tv == false)
-            {
-                Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv!");
+                Console.WriteLine("Looks like your " + address + " isn't interested in any of our reccomended genres!");
             }
         }
 
