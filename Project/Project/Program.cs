@@ -14,7 +14,7 @@ namespace Project
         private static string parent, popularGenre, bookStyle;
         private static List<string> question = new List<string>();
         private static string address = "them";
-        private static Boolean book, film, tv;
+        private static Boolean book, film, tv, entertainment;
         private static int votes;
 
         static void Main(string[] args)
@@ -103,8 +103,13 @@ namespace Project
                 Console.WriteLine("Does your " + address + " like books, films, or tv? (Y or N)");
                 temp = Console.ReadLine();
             } while (!(temp.ToLower() == "y" || temp.ToLower() == "n"));
-            if (temp.ToLower() == "y")
+            if (temp.ToLower() == "n")
             {
+                entertainment = false;
+            }
+            else if (temp.ToLower() == "y")
+            {
+                entertainment = true;
                 do
                 {
                     /* like books */
@@ -220,10 +225,10 @@ namespace Project
         {
             if (votes != 0)
             {
-                if (book != false && film != false && tv != false)
-                {
+                
+                
                     Console.WriteLine("The most popular genre overall for your " + address + " is: " + popularGenre + " with " + votes + " number of votes");
-                }
+                
                 if (book == true)
                 {
                     bookAnswer(popularGenre);
@@ -240,6 +245,9 @@ namespace Project
                 {
                     Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv! We can't help you.");
                 }
+            }
+            if(entertainment == false) {
+                Console.WriteLine("Looks like your " + address + " isn't interested in books, films, or tv! We can't help you.");
             }
             else
             {
